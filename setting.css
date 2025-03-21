@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a .material-icons {
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Form */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #00ff99;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+form button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #00ff99, #00aaff);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    /* background-color: #1a1a1a; */
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 300;
+}
+.active{
+    display: block;
+    
+}
+
+.hamburger-menu span {
+    color: black;
+    font-size: 28px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}

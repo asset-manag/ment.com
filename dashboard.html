@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <!-- Linking CSS -->
+  </head>
+  <body>
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+      <button class="close-btn">&times;</button>
+      <ul class="menu">
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+        <li><a href="task.html">📝 Task</a></li>
+        <li><a href="deposit.html">💰 Deposit</a></li>
+        <li><a href="funds.html">📜 Deposit Info </a></li>
+        <li><a href="withdraw.html">📤 Withdraw</a></li>
+        <li><a href="referals.html">🔗 Referral</a></li>
+        <li><a href="setting.html">⚙️ Settings</a></li>
+        <li><a href="index.html">🚪 Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="top-bar">
+        <button class="hamburger">&#9776;</button>
+        <a href="index.html">
+          <img src="power-icon.png" alt="Logout" class="logout-icon" />
+        </a>
+      </div>
+
+      <div class="dashboard">
+        <div class="profile">
+          <img src="user.webp" alt="User Avatar" />
+          <h2>User303030</h2>
+          <p>Welcome Back</p>
+        </div>
+
+        <div class="balance-card">
+          <div class="progress-circle">
+            <h3>16.00 Rs</h3>
+            <p>Balance</p>
+          </div>
+          <div class="buttons">
+            <button class="btn"><a href="funds.html">Deposit</a></button>
+            <button class="btn"><a href="withdraw.html">Withdraw</a></button>
+            <button class="btn"><a href="referals.html">My Team</a></button>
+            <button class="btn"><a href="task.html">Task</a></button>
+          </div>
+        </div>
+
+        <div class="referral-box">
+          <input
+            type="text"
+            value="https://asset-management-llc.com?ref=tyler99"
+            readonly
+          />
+          <button class="copy-btn">📋</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-cont">
+      <div class="container">
+        <div class="card">
+          <img src="investment.webp" alt="Investment" />
+          <h2>0</h2>
+          <p>Total Investment</p>
+        </div>
+
+        <div class="card">
+          <img src="withdraw.webp" alt="Withdraw" />
+          <h2>0</h2>
+          <p>Total Withdraw</p>
+        </div>
+
+        <div class="card">
+          <img src="depost-balance.webp" alt="Deposit" />
+          <h2>0</h2>
+          <p>Deposit Balance</p>
+        </div>
+
+        <div class="card">
+          <img src="team.webp" alt="Total Team" />
+          <h2>0</h2>
+          <p>Total Team</p>
+        </div>
+
+        <div class="card">
+          <img src="team-bonus.webp" alt="Team Bonus" />
+          <h2>0</h2>
+          <p>Team Bonus</p>
+        </div>
+
+        <div class="card">
+          <img src="pending-deposit.webp" alt="Pending Deposit" />
+          <h2>0</h2>
+          <p>Pending Deposit</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-heading">
+      <h2>We <span class="highlight">Provide</span> The Best Service</h2>
+      <p class="subheading">OUR FAST SERVICES</p>
+    </div>
+
+    <div class="slider-container">
+      <div class="slider">
+        <div class="card">
+          <div class="icon">🏦</div>
+          <h3>Withdraw Your Profit</h3>
+        </div>
+        <div class="card">
+          <div class="icon">🎉</div>
+          <h3>Build Your Team</h3>
+        </div>
+        <div class="card">
+          <div class="icon">🚀</div>
+          <h3>15% Referral Commission</h3>
+        </div>
+        <div class="card">
+          <div class="icon">💳</div>
+          <h3>Secure Payments</h3>
+        </div>
+        <div class="card">
+          <div class="icon">📞</div>
+          <h3>24/7 Support</h3>
+        </div>
+        <div class="card">
+          <div class="icon">📈</div>
+          <h3>Daily Growth</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot active" onclick="moveTo(0)"></span>
+      <span class="dot" onclick="moveTo(1)"></span>
+      <span class="dot" onclick="moveTo(2)"></span>
+      <span class="dot" onclick="moveTo(3)"></span>
+      <span class="dot" onclick="moveTo(4)"></span>
+      <span class="dot" onclick="moveTo(5)"></span>
+    </div>
+
+    <div class="business-section">
+      <div class="image-container">
+        <img src="about-left-image.png" alt="Business Team" />
+      </div>
+      <div class="content">
+        <h2>
+          Grow Your Business With Our <span class="blue-text">Fast</span>
+          <span class="red-text">Trending</span> &
+          <span class="red-text">Project</span>
+        </h2>
+        <p>Build your team and earn a huge profit daily from their earning.</p>
+        <div class="stats">
+          <div class="stat-box">
+            <div class="icon">🎉</div>
+            <h3>3200</h3>
+            <p>Joined Today</p>
+          </div>
+          <div class="stat-box">
+            <div class="icon">🚀</div>
+            <h3>6400</h3>
+            <p>Activated Plan</p>
+          </div>
+          <div class="stat-box">
+            <div class="icon">🛒</div>
+            <h3>12050</h3>
+            <p>Satisfied Clients</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="plans-section">
+      <h2>
+        Select A Suitable <span class="blue-text">Plan</span> For Your Next
+        <span class="red-text">Projects</span>
+      </h2>
+
+      <div class="plans-container">
+        <!-- Card 1 -->
+        <div class="plan-card">
+          <h3>VIP 1</h3>
+          <h4>Rs 300</h4>
+          <p>Daily Profit: <strong>25 Pkr</strong></p>
+          <p>Total Profit: <strong>4500 Pkr</strong></p>
+          <p>Validity for: <strong>180 Days</strong></p>
+          <p>Daily Task: <strong>1 TASK</strong></p>
+          <p>Daily Withdraw</p>
+          <p>Referral Commission: <strong>15%</strong></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <!-- Duplicate the above card 8 more times -->
+        <div class="plan-card">
+          <h3>VIP 2</h3>
+          <h4>Rs 500</h4>
+          <p>Daily Profit: <strong>40 Pkr</strong></p>
+          <p>Total Profit: <strong>7200 Pkr</strong></p>
+          <p>Validity for: <strong>180 Days</strong></p>
+          <p>Daily Task: <strong>2 TASKS</strong></p>
+          <p>Daily Withdraw</p>
+          <p>Referral Commission: <strong>18%</strong></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="plan-card">
+          <h3>VIP 3</h3>
+          <h4>Rs 1000</h4>
+          <p>Daily Profit: <strong>80 Pkr</strong></p>
+          <p>Total Profit: <strong>14400 Pkr</strong></p>
+          <p>Validity for: <strong>180 Days</strong></p>
+          <p>Daily Task: <strong>3 TASKS</strong></p>
+          <p>Daily Withdraw</p>
+          <p>Referral Commission: <strong>20%</strong></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="plan-card">
+          <h3>VIP 4</h3>
+          <h4>Rs 2000</h4>
+          <p>Daily Profit: <strong>160 Pkr</strong></p>
+          <p>Total Profit: <strong>28800 Pkr</strong></p>
+          <p>Validity for: <strong>180 Days</strong></p>
+          <p>Daily Task: <strong>4 TASKS</strong></p>
+          <p>Daily Withdraw</p>
+          <p>Referral Commission: <strong>22%</strong></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="plan-card">
+          <h3>VIP 5</h3>
+          <h4>Rs 5000</h4>
+          <p>Daily Profit: <strong>400 Pkr</strong></p>
+          <p>Total Profit: <strong>72000 Pkr</strong></p>
+          <p>Validity for: <strong>180 Days</strong></p>
+          <p>Daily Task: <strong>5 TASKS</strong></p>
+          <p>Daily Withdraw</p>
+          <p>Referral Commission: <strong>25%</strong></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="plan-card">
+          <h3>VIP 6</h3>
+          <h4>Rs 10000</h4>
+          <p>Daily Profit: <strong>800 Pkr</strong></p>
+          <p>Total Profit: <strong>144000 Pkr</strong></p>
+          <p>Validity for: <strong>180 Days</strong></p>
+          <p>Daily Task: <strong>6 TASKS</strong></p>
+          <p>Daily Withdraw</p>
+          <p>Referral Commission: <strong>30%</strong></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="plan-card">
+          <h3>VIP 7</h3>
+          <h4>Rs 15000</h4>
+          <p>Daily Profit: <strong>1200 Pkr</strong></p>
+          <p>Total Profit: <strong>216000 Pkr</strong></p>
+          <p>Validity for: <strong>180 Days</strong></p>
+          <p>Daily Task: <strong>7 TASKS</strong></p>
+          <p>Daily Withdraw</p>
+          <p>Referral Commission: <strong>35%</strong></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="plan-card">
+          <h3>VIP 8</h3>
+          <h4>Rs 20000</h4>
+          <p>Daily Profit: <strong>1600 Pkr</strong></p>
+          <p>Total Profit: <strong>288000 Pkr</strong></p>
+          <p>Validity for: <strong>180 Days</strong></p>
+          <p>Daily Task: <strong>8 TASKS</strong></p>
+          <p>Daily Withdraw</p>
+          <p>Referral Commission: <strong>40%</strong></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="plan-card">
+          <h3>VIP 9</h3>
+          <h4>Rs 25000</h4>
+          <p>Daily Profit: <strong>2000 Pkr</strong></p>
+          <p>Total Profit: <strong>360000 Pkr</strong></p>
+          <p>Validity for: <strong>180 Days</strong></p>
+          <p>Daily Task: <strong>9 TASKS</strong></p>
+          <p>Daily Withdraw</p>
+          <p>Referral Commission: <strong>45%</strong></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column brand">
+          <img src="logo.png" alt="Company Logo" />
+          <p class="email">support@Investify.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="links_heading">Services</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="links_heading">Links</h3>
+          <ul>
+            <li><a href="loginpage.html">Login</a></li>
+            <li><a href="registerpage.html">Signup</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="links_heading">About Us</h3>
+          <p>
+            We provide top-tier solutions for managing your assets efficiently,
+            ensuring financial growth.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2025 Investify.com All Rights Reserved.</p>
+        <p>Designed by <span class="highlight">AA Private Limited</span></p>
+      </div>
+    </footer>
+
+    <script defer src="dashboard.js"></script>
+    <!-- Linking JS -->
+  </body>
+</html>

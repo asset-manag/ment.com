@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Referral Link</title>
+    <link rel="stylesheet" href="referals.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <!-- Hamburger Menu (Mobile) -->
+    <div class="hamburger-menu" id="hamburger">
+      <span class="material-icons">menu</span>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li>
+          <a href="dashboard.html"
+            ><span class="material-icons">home</span> Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="dashboard.html"
+            ><span class="material-icons">person</span> Profile</a
+          >
+        </li>
+        <li>
+          <a href="setting.html"
+            ><span class="material-icons">settings</span> Settings</a
+          >
+        </li>
+        <li>
+          <a href="index.html"
+            ><span class="material-icons">power_settings_new</span> Logout</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- User Data Table -->
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3" class="no-data">Data Not Found</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Referral Link Section -->
+    <div class="container">
+      <div class="header">Referral Link</div>
+      <div class="input-box">
+        <input
+          type="text"
+          id="referral-link"
+          value="https://asset-management-llc.com?reference=tyler99"
+          readonly
+        />
+        <button class="copy-btn" onclick="copyLink()">Copy</button>
+      </div>
+    </div>
+
+    <script src="referals.js"></script>
+  </body>
+</html>

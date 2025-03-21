@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tasks</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="deposit.html">💰 Deposit</a></li>
+            <li><a href="withdraw.html">🏦 Withdraw</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="task-section">
+            <h2>Daily Tasks</h2>
+            <p>Complete all tasks to earn your daily reward!</p>
+
+            <ul id="task-list">
+                <li class="task-item" id="task1">
+                    <span>📢 Share the referral link on WhatsApp</span>
+                    <button onclick="shareOnWhatsApp('https://yourwebsite.com/referral', 1)">Share</button>
+                </li>
+
+                <li class="task-item" id="task2">
+                    <span>🛒 Share this product on WhatsApp</span>
+                    <button onclick="shareOnWhatsApp('https://markaz.com/product-link', 2)">Share</button>
+                </li>
+
+                <li class="task-item" id="task3">
+                    <span>📷 Follow our Instagram page</span>
+                    <button onclick="followInstagram()">Follow</button>
+                </li>
+            </ul>
+
+            <button id="claim-reward" onclick="claimReward()" disabled>Claim Reward</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script src="task.js"></script>
+</body>
+</html>

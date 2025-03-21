@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="setting.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <!-- Hamburger Menu (Mobile) -->
+    <div class="hamburger-menu" id="hamburger">
+        <span class="material-icons">menu</span>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="dashboard.html"><span class="material-icons">home</span> Dashboard</a></li>
+            <li><a href="dashboard.html"><span class="material-icons">person</span> Profile</a></li>
+            <li><a href="setting.html"><span class="material-icons">settings</span> Settings</a></li>
+            <li><a href="index.html"><span class="material-icons">power_settings_new</span> Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2 style="margin-left: 50px;">Profile Setting</h2>
+        <form id="profile-form">
+            <label>Firstname</label>
+            <input type="text" id="firstname" value="tyler99">
+            
+            <label>Lastname</label>
+            <input type="text" id="lastname" value="User123">
+            
+            <label>Mobile Number</label>
+            <input type="text" id="mobile" value="0123456789">
+            
+            <label>Email Address</label>
+            <input type="email" id="email" value="user123@gmail.com">
+            
+            <button type="submit">UPDATE INFORMATION</button>
+        </form>
+    </div>
+
+    <script src="setting.js"></script>
+</body>
+</html>

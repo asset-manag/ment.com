@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Funds</title>
+    <link rel="stylesheet" href="funds.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Deposit Form -->
+        <section id="deposit-form">
+            <h2>Deposit Funds</h2>
+
+            <!-- Select Payment Method -->
+            <label>Select Payment Method:</label>
+            <div class="payment-method">
+                <button class="method-btn" onclick="selectPaymentMethod('JazzCash')">JazzCash</button>
+                <button class="method-btn" onclick="selectPaymentMethod('Easypaisa')">Easypaisa</button>
+            </div>
+
+            <!-- Select Deposit Plan -->
+            <label>Select Your Plan:</label>
+            <select id="plan" onchange="updateAmount()">
+                <option value="300">VIP 1 - Rs 300</option>
+                <option value="500">VIP 2 - Rs 500</option>
+                <option value="1000">VIP 3 - Rs 1000</option>
+                <option value="2000">VIP 4 - Rs 2000</option>
+                <option value="5000">VIP 5 - Rs 5000</option>
+                <option value="10000">VIP 6 - Rs 10000</option>
+                <option value="15000">VIP 7 - Rs 15000</option>
+                <option value="20000">VIP 8 - Rs 20000</option>
+                <option value="25000">VIP 9 - Rs 25000</option>
+            </select>
+
+            <!-- Display Amount -->
+            <label>Deposit Amount:</label>
+            <input type="number" id="amount" readonly>
+
+            <!-- Account Details (Dynamic) -->
+            <div id="account-details">
+                <h3>Send Payment To:</h3>
+                <p id="acc-name"></p>
+                <p id="acc-number"></p>
+            </div>
+
+            <!-- Transaction ID -->
+            <label>Enter Transaction ID:</label>
+            <input type="text" id="trx-id" placeholder="Enter TRX ID">
+
+            <!-- Upload Screenshot -->
+            <label>Upload Payment Screenshot:</label>
+            <input type="file" id="screenshot">
+
+            <!-- Deposit Button -->
+            <button id="deposit-btn" onclick="submitDeposit()">Deposit</button>
+
+            <!-- Important Note -->
+            <p class="note"><b>⚠️ IMPORTANT:</b> Please send the payment, take a screenshot, and enter the correct transaction ID before submitting.</p>
+        </section>
+
+        <!-- Deposit History -->
+        <section id="deposit-history">
+            <h2>Deposit History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Amount</th>
+                        <th>Method</th>
+                        <th>TRX ID</th>
+                        <th>Screenshot</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="deposit-list">
+                    <tr><td colspan="6" class="no-data">No Data Found</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="funds.js"></script>
+</body>
+</html>
+

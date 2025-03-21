@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f9ff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.method-btn {
+    background: #007bff;
+    color: white;
+   width: 40%;
+   height: 5vh;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+.method-btn:hover {
+    background: #0056b3;
+}
+
+#deposit-btn {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#deposit-btn:hover {
+    background: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.no-data {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.note {
+    background: #ffebcc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
